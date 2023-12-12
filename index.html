@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Montserrat:wght@500&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="p-3 px-0 px-md-3">
+      <div class="container d-flex justify-content-between primary-color">
+        <p class="h5">b.danev</p>
+        <ul class="d-flex list-unstyled h6">
+          <li class="me-3">
+            <a href="" class="primary-color">About</a>
+          </li>
+          <li class="me-3">
+            <a href="#projects" class="primary-color">Projects</a>
+          </li>
+          <li class="me-3">
+            <a href="#contact" class="primary-color">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="about p-md-5">
+      <div class="container">
+        <div class="row mt-1 mt-md-3 mt-lg-5 g-5">
+          <div class="col-md-6 blurry animated">
+            <p class="h1 primary-color">
+              Hello I am Boris <br />
+              I am frontend developer
+            </p>
+            <p class="text-white">
+              Front-end developer specializing in crafting responsive and
+              performant web applications. I thrive on turning ideas into
+              interactive and engaging user interfaces
+            </p>
+          </div>
+          <div class="col-md-6 d-flex justify-content-center">
+            <div class="img-container">
+              <img
+                src="images/user.jpg"
+                class="img-fluid w-100 h-100"
+                draggable="false"
+                alt="creator"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects my-5 mt-md-0 mb-md-4">
+      <div class="container-lg px-md-5 px-lg-3">
+        <p class="h2 text-white mb-5">Projects</p>
+        <div class="row gy-5">
+          <div class="col-12">
+            <div class="row gy-3">
+              <div class="col-md-6">
+                <img src="images/swiftsell_img.png" class="img-fluid" />
+              </div>
+              <div class="col-md-6">
+                <p class="title h3 primary-color">Swiftsell</p>
+                <p class="desc text-white h6">
+                  Swiftsell is an e-commerce website developed with React, CSS,
+                  Bootstrap, and integrated with the ASOS API. It optimizes user
+                  experience by using local storage for cart management.
+                </p>
+                <div class="d-flex mt-5">
+                  <a
+                    href="https://swiftsellshop.netlify.app/"
+                    class="btn primary-btn underline-reveal h6 me-4 website-link"
+                  >
+                    Visit Website
+                  </a>
+                  <a
+                    href="https://github.com/borisdanev/SwiftSell"
+                    class="btn secondary-btn h6 sweep-to-right website-link"
+                    >View Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="row gy-3">
+              <div class="col-md-6 order-1">
+                <p class="title h3 primary-color">Cryptovize</p>
+                <p class="desc text-white h6">
+                  Cryptovize is a React-based cryptocurrency trading web
+                  application that utilizes Redux as a state manager, CSS, MUI,
+                  CoinRanking API, and Firestore for user data storage.
+                </p>
+                <div class="d-flex mt-5">
+                  <a
+                    href="https://cryptovize.netlify.app/"
+                    class="btn primary-btn underline-reveal h6 me-4 website-link"
+                    >Visit Website</a
+                  >
+                  <a
+                    href="https://github.com/borisdanev/Cryptovize"
+                    class="btn secondary-btn sweep-to-right h6 website-link"
+                    >View Code</a
+                  >
+                </div>
+              </div>
+              <div class="col-md-6 order-0 order-md-1">
+                <img src="images/cryptovize_img.png" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="row gy-3">
+              <div class="col-md-6">
+                <img src="images/homeFront_img.png" class="img-fluid" />
+              </div>
+              <div class="col-md-6">
+                <p class="title h3 primary-color">HomeFront</p>
+                <p class="decs text-white h6">
+                  HomeFront is a real estate website created to showcase and
+                  furnish information on properties within the United Arab
+                  Emirates. It is built with HTML, CSS, JavaScript, Bootstrap
+                  and integrates with Bayut API.
+                </p>
+                <div class="d-flex mt-5">
+                  <a
+                    href="https://homefront.netlify.app/"
+                    class="btn primary-btn underline-reveal h6 me-4 website-link"
+                  >
+                    Visit Website
+                  </a>
+                  <a
+                    href="https://github.com/borisdanev/HomeFront"
+                    class="btn secondary-btn sweep-to-right h6 website-link"
+                    >View Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="row gy-3">
+              <div class="col-md-6 order-1">
+                <p class="title h3 primary-color">ForecastPal</p>
+                <p class="desc text-white h6">
+                  ForecastPal is a forecast web application created for weather
+                  forecasting,it provides reliable weather information and
+                  accurate forecasts. It is developed using React, CSS,
+                  React-Bootstrap and intergrating WeatherApi and Geolocation
+                  API.
+                </p>
+                <div class="d-flex mt-5">
+                  <a
+                    href="https://forecastpal.netlify.app/"
+                    class="btn primary-btn underline-reveal h6 me-4 website-link"
+                    >Visit Website</a
+                  >
+                  <a
+                    href="https://github.com/borisdanev/ForecastPal"
+                    class="btn secondary-btn sweep-to-right h6 website-link"
+                    >View Code</a
+                  >
+                </div>
+              </div>
+              <div class="col-md-6 order-0 order-md-1">
+                <img
+                  src="images/forecastPal_img.png"
+                  class="img-fluid phone-img d-none d-md-block"
+                />
+                <img
+                  src="images/forecastPal_desktop.png"
+                  class="img-fluid d-block d-md-none"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skills">
+      <div class="container-lg">
+        <p class="h2 text-white mb-5">Languages & Technologies</p>
+        <div class="row gy-5 primary-color h3">
+          <div class="col-3 col-md-2 d-flex flex-column align-items-center">
+            <i class="fa-brands fa-html5"></i>
+            <p class="h6">HTML</p>
+          </div>
+          <div class="col-3 col-md-2 d-flex flex-column align-items-center">
+            <i class="fa-brands fa-css3-alt"></i>
+            <p class="h6">CSS</p>
+          </div>
+          <div class="col-3 col-md-2 d-flex flex-column align-items-center">
+            <i class="fa-brands fa-square-js"></i>
+            <p class="h6">JavaScript</p>
+          </div>
+          <div class="col-3 col-md-2 d-flex flex-column align-items-center">
+            <i class="fa-brands fa-react"></i>
+            <p class="h6">React</p>
+          </div>
+          <div class="col-4 col-md-2 d-flex flex-column align-items-center">
+            <i class="fa-brands fa-sass"></i>
+            <p class="h6">SCSS</p>
+          </div>
+          <div class="col-3 col-md-2 d-flex flex-column align-items-center">
+            <img
+              src="images/redux_logo.png"
+              class="img-fluid skill-logo"
+              draggable="false"
+            />
+            <p class="h6">Redux</p>
+          </div>
+
+          <div class="col-4 col-md-3 d-flex flex-column align-items-center">
+            <i class="fa-brands fa-square-git"></i>
+            <p class="h6">GIT</p>
+          </div>
+          <div class="col-4 col-md-3 d-flex flex-column align-items-center">
+            <img
+              src="images/firebase_logo.png"
+              class="img-fluid skill-logo"
+              draggable="false"
+            />
+            <p class="h6">Firebase</p>
+          </div>
+          <div class="col-4 col-md-3 d-flex flex-column align-items-center">
+            <img
+              src="images/mui_logo.png"
+              class="img-fluid skill-logo"
+              draggable="false"
+            />
+            <p class="h6">MUI</p>
+          </div>
+          <div class="col-4 col-md-3 d-flex flex-column align-items-center">
+            <i class="fa-brands fa-bootstrap"></i>
+            <p class="h6">Bootstrap</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="contact" class="p-md-5 mt-5">
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <form
+            action="https://formspree.io/f/mbjvwlyw"
+            class="form-group position-relative"
+          >
+            <div class="pt-3">
+              <label for="first-name" class="form-label text-white"
+                >First Name</label
+              >
+              <input
+                id="first-name"
+                name="first-name"
+                class="form-control"
+                placeholder="First Name"
+              />
+            </div>
+            <div class="pt-3">
+              <label for="email" class="form-label text-white">Email</label>
+              <input
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="E-mail"
+              />
+            </div>
+            <div class="pt-3">
+              <label for="message" class="form-label text-white">Message</label>
+              <input
+                name="message"
+                id="message"
+                class="form-control"
+                placeholder="Message"
+              />
+            </div>
+            <div class="d-flex justify-content-center mt-4">
+              <button class="btn primary-btn h6 underline-reveal">Send</button>
+            </div>
+            <div class="success-message rounded-3">
+              <i class="fa-solid fa-check"></i>
+              <span>Message successfully sent</span>
+            </div>
+          </form>
+        </div>
+        <div
+          class="d-flex justify-content-between align-items-center primary-color mt-5"
+        >
+          <p class="text-white d-none d-sm-block">Feel free to contact me</p>
+          <div>
+            <i class="fa-brands fa-instagram h5 me-3"></i>
+            <i class="fa-brands fa-linkedin h5 me-3"></i>
+            <a
+              href="https://github.com/borisdanev"
+              class="fa-brands fa-github h5 me-3 website-link"
+            ></a>
+          </div>
+          <div class="d-flex align-items-center">
+            <i class="fa-solid fa-envelope me-2"></i>
+            <p class="m-0">borisdanev9@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
