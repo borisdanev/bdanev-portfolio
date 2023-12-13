@@ -35,7 +35,7 @@ a {
   background-color: black;
 }
 .about .img-container img {
-  object-fit: fill;
+  object-fit: cover;
   border-radius: inherit;
   height: 100%;
 }
@@ -57,15 +57,15 @@ a {
 .projects img {
   border-radius: 8px;
 }
-.side-bar {
-}
 .phone-img {
   height: 440px;
   border-radius: 25px;
 }
-.skill-logo {
+.skill-icon {
   width: 28px;
   height: 32px;
+  margin-left: 1.5rem;
+  animation: upDown 2.5s infinite ease-in-out;
 }
 #contact form {
   width: 100%;
@@ -85,6 +85,13 @@ a {
   transform: translateY(-100%);
   opacity: 1;
 }
+.contact-mail i {
+  transition: all ease-in-out 0.5s;
+}
+.contact-mail:hover > i {
+  transform: translateY(-20%);
+}
+
 .sweep-to-right {
   display: inline-block;
   vertical-align: middle;
@@ -166,4 +173,13 @@ a {
 }
 .blurry {
   filter: blur(5px);
+}
+@keyframes upDown {
+  0%,
+  100% {
+    transform: translate(-50%, -20%) translateY(0);
+  }
+  50% {
+    transform: translate(-50%, -40%);
+  }
 }
