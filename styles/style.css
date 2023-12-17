@@ -59,6 +59,9 @@ a {
 .projects img {
   border-radius: 8px;
 }
+.projects .col-12 {
+  transition: all 0.6s ease-in-out;
+}
 .phone-img {
   height: 440px;
   border-radius: 25px;
@@ -87,75 +90,6 @@ a {
   transform: translateY(-100%);
   opacity: 1;
 }
-.contact-mail i {
-  transition: all ease-in-out 0.5s;
-}
-.contact-mail:hover > i {
-  transform: translateY(-20%);
-}
-
-.sweep-to-right {
-  display: inline-block;
-  vertical-align: middle;
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative;
-  transition-property: color;
-  transition-duration: 0.3s;
-}
-.sweep-to-right:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: var(--primary-color);
-  border-radius: 6px;
-  transform: scaleX(0);
-  transform-origin: 0 50%;
-  transition-property: transform;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
-}
-.sweep-to-right:hover,
-.sweep-to-right:focus,
-.sweep-to-right:active {
-  color: white !important;
-}
-.sweep-to-right:hover:before,
-.sweep-to-right:focus:before,
-.sweep-to-right:active:before {
-  transform: scaleX(1);
-}
-.underline-reveal {
-  display: inline-block;
-  vertical-align: middle;
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative;
-  overflow: hidden;
-}
-.underline-reveal:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: var(--primary-color);
-  height: 4px;
-  transform: translateY(4px);
-  transition-property: transform;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
-}
-.underline-reveal:hover:before,
-.underline-reveal:focus:before,
-.underline-reveal:active:before {
-  transform: translateY(0);
-}
 @media (min-width: 768px) {
   #contact form {
     width: 50%;
@@ -166,15 +100,6 @@ a {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
-}
-.animated {
-  transition: all 0.5s ease-in-out;
-}
-.slide-from-left {
-  transform: translateX(-100%);
-}
-.blurry {
-  filter: blur(5px);
 }
 @keyframes upDown {
   0%,

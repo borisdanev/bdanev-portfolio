@@ -74,3 +74,26 @@ websiteLinks.forEach((item) =>
 document
   .querySelectorAll(".blurry")
   .forEach((item) => item.classList.remove("blurry"));
+const intersectionCallback = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
+    const target = entry.target;
+    const className = target.dataset.className;
+    target.classList.remove(className);
+  });
+};
+const observer = new IntersectionObserver(intersectionCallback, {
+  root: null,
+  threshold: window.innerWidth > 762 ? 0.06 : 0.1,
+});
+const setObserver = (className) => {
+  const elements = document.querySelectorAll(`.${className}`);
+  elements.forEach((el) => {
+    el.dataset.className = className;
+    observer.observe(el);
+  });
+};
+setObserver("slide-from-left");
+setObserver("slide-from-right");
+setObserver("slide-from-down");
+setObserver("zoom-out");
