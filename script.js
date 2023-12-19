@@ -80,6 +80,7 @@ const intersectionCallback = (entries, observer) => {
     const target = entry.target;
     const className = target.dataset.className;
     target.classList.remove(className);
+    observer.unobserve(target);
   });
 };
 const observer = new IntersectionObserver(intersectionCallback, {

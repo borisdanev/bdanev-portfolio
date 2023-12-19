@@ -30,6 +30,10 @@ a {
 .h6 {
   font-size: clamp(1rem, 2vw, 1.25rem);
 }
+.nav-bar {
+  background-color: #101626;
+  z-index: 99;
+}
 .about .img-container {
   border-radius: 50%;
   width: clamp(14rem, 30vw, 20rem);
