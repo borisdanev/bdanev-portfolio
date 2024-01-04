@@ -99,6 +99,11 @@ a {
     width: 50%;
   }
 }
+@media (max-width: 48rem) {
+  .about {
+    padding-top: 0.8rem;
+  }
+}
 @media (max-width: 37.5rem) {
   section {
     padding-left: 0.5rem;

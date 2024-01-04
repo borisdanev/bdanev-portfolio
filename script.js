@@ -85,7 +85,7 @@ const intersectionCallback = (entries, observer) => {
 };
 const observer = new IntersectionObserver(intersectionCallback, {
   root: null,
-  threshold: window.innerWidth > 762 ? 0.06 : 0.1,
+  threshold: 0.6,
 });
 const setObserver = (className) => {
   const elements = document.querySelectorAll(`.${className}`);
@@ -94,7 +94,5 @@ const setObserver = (className) => {
     observer.observe(el);
   });
 };
-setObserver("slide-from-left");
-setObserver("slide-from-right");
 setObserver("slide-from-down");
 setObserver("zoom-out");
