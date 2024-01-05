@@ -1,7 +1,7 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Montserrat:ital,wght@0,500;1,500&family=Roboto:ital,wght@0,500;1,400&display=swap");
 :root {
-  --primary-color: #8da8f2;
+  --primary-color: rgb(141, 168, 242);
 }
 body {
   background-color: #101626;
@@ -75,6 +75,11 @@ a {
   height: 32px;
   margin-left: 1.5rem;
   animation: upDown 2.5s infinite ease-in-out;
+}
+.nextjs-icon {
+  width: 60px;
+  height: 60px;
+  /* animation: upDown 2.5s infinite ease-in-out; */
 }
 #contact form {
   width: 100%;
