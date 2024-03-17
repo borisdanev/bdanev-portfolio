@@ -60,6 +60,10 @@ a {
   border-color: var(--primary-color);
   color: var(--primary-color) !important;
 }
+.project-heading {
+  color: #496886;
+  /* color:#363C42 */
+}
 .projects img {
   border-radius: 8px;
 }
@@ -69,6 +73,17 @@ a {
 .phone-img {
   height: 440px;
   border-radius: 25px;
+}
+.skills p {
+  line-height: 1.5;
+}
+.skills .icon-wrapper {
+  border: 2px solid var(--primary-color);
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .skill-icon {
   width: 28px;
@@ -102,8 +117,11 @@ a {
 #contact {
   border-top: 1px solid rgb(141, 168, 242);
 }
+#contact .copyright {
+  font-size: clamp(0.75rem, 1vw, 0.9rem);
+}
 footer img {
-  width: 10rem !important;
+  width: 8rem !important;
   border-radius: 50%;
   object-fit: cover;
 }
