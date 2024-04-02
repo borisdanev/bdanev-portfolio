@@ -89,8 +89,8 @@ a {
   color: white;
 }
 .skill-icon {
-  width: 28px;
-  height: 32px;
+  width: clamp(21px, 3.5vw, 28px);
+  height: clamp(24px, 3.5vw, 32px);
   margin-left: 1.5rem;
   animation: upDown 2.5s infinite ease-in-out;
 }
