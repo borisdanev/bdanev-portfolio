@@ -48,6 +48,9 @@ a {
 .primary-color {
   color: var(--primary-color);
 }
+.text-secondary {
+  color: hsl(0, 0%, 80%) !important;
+}
 .primary-btn {
   background-color: #374059;
   color: white !important;
@@ -127,11 +130,6 @@ footer img {
   width: 8rem !important;
   border-radius: 50%;
   object-fit: cover;
-}
-@media (min-width: 768px) {
-  #contact form {
-    /* width: 50%; */
-  }
 }
 @media (max-width: 48rem) {
   .about {
